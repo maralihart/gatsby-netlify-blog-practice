@@ -1,4 +1,5 @@
 import React from "react"
+import { Navbar, Nav, NavItem } from "react-bootstrap"
 import { Link } from "gatsby"
 
 const Layout = ({ location, title, children }) => {
@@ -22,6 +23,8 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
+      <Navbar>
+      </Navbar>
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
