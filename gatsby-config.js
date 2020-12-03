@@ -10,6 +10,12 @@ module.exports = {
     social: {
       twitter: `kathryn`,
     },
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+    ]
   },
   plugins: [
     {

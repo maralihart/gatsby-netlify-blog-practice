@@ -5,6 +5,23 @@ const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
+  let navbar
+
+  navbar = (
+    <Navbar.Header>
+      <Navbar.Brand>
+        <Link to="/">S2B</Link>
+      </Navbar.Brand>
+    </Navbar.Header>
+    <Nav>
+      <NavItem href="#">
+        Home
+      </NavItem>
+      <NavItem href="#">
+        Blog
+      </NavItem>
+    </Nav>
+  )
 
   if (isRootPath) {
     header = (
@@ -22,10 +39,11 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
+      <Navbar>{navbar}</Navbar>
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
+        © {new Date().getFullYear()}, Developed by Mara Hart with
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>
       </footer>
