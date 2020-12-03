@@ -288,6 +288,7 @@ a:focus {
 
 .bio {
   display: flex;
+  margin-top: var(--spacing-16);
   margin-bottom: var(--spacing-16);
 }
 
@@ -317,6 +318,18 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+}
+
+.header-image {
+  padding: 60px;
+  text-align: center;
+  background: var(--color-accent);
+}
+
+.card {
+  border: 1px solid var(--color-accent);
+  padding-left: var(--spacing-3);
+  margin-bottom: var(--spacing-5);
 }
 
 /* Media queries */
