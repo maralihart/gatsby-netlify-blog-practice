@@ -36,6 +36,7 @@ module.exports = {
               maxWidth: 630,
             },
           },
+          `gatsby-plugin-netlify-cms`,
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
